@@ -241,10 +241,10 @@ class ThinGifler {
     this._animator.stop()
   }
 }
-const thinGiflerAsync = function(url) {
+function thinGiflerAsync(url) {
   return fetch(url)
       .then(response => response.arrayBuffer())
-      .then(arrayBuffer => ThinGifler(arrayBuffer))
+      .then(arrayBuffer => new ThinGifler(arrayBuffer))
 }
 export {
   thinGiflerAsync
