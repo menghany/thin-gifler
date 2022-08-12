@@ -1,6 +1,6 @@
 {
-  "name"        : "gifler",
-  "version"     : "0.3.0",
+  "name"        : "thin-gifler",
+  "version"     : "0.1.0",
   "description" : "Render GIF frames to <canvas>",
   "author"      : "themadcreator@github",
   "license"     : "Apache-2.0",
@@ -17,8 +17,7 @@
     "postdeploy"  : "git push && git push --tags"
   },
   "dependencies" : {
-    "bluebird" : "3.0.2",
-    "omggif"   : "1.0.x"
+    "omggif"   : "^1.0.10"
   },
   "devDependencies": {
     "browserify"              : "11.x.x",
